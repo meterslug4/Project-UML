@@ -1,9 +1,86 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="페이지-1" id="sHEpHpQpdTKxbZiZtnZ-">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-35" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=7;" edge="1" parent="1" source="X0Fx-xbfwJYcSoWSLXi_-1" target="X0Fx-xbfwJYcSoWSLXi_-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="420" as="sourcePoint" />
+            <mxPoint x="700" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-1" value="Unity Client 1&lt;div&gt;(Peer1)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-2" value="Unity Client 2&lt;div&gt;(Peer2)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-3" value="Signaling Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-6" value="시그널링 서버를 통해서 서로간에 P2P 연결에 필요한 정보들을 교환&lt;div&gt;기본적으로 STUN 서버를 통해 연결(STUN 서버는 Google Open Server 사용)&lt;/div&gt;&lt;div&gt;WebSocket Signaling Server를 사용하여 서로의 IP 주소를 확인하고&lt;/div&gt;&lt;div&gt;Offer와 Answer를 주고받으면서 통신을 위한 규약을 확인한다.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="390" width="430" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-7" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="X0Fx-xbfwJYcSoWSLXi_-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="420" as="sourcePoint" />
+            <mxPoint x="720" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-8" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="X0Fx-xbfwJYcSoWSLXi_-3" target="X0Fx-xbfwJYcSoWSLXi_-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="420" as="sourcePoint" />
+            <mxPoint x="700" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-11" value="&lt;ul&gt;&lt;li&gt;STUN Server URL&lt;/li&gt;&lt;li&gt;TURN Server URL&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Answer&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Offer&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="264" y="250" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-12" value="&lt;ul&gt;&lt;li&gt;STUN Server URL&lt;/li&gt;&lt;li&gt;TURN Server URL&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Answer&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Offer&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="480" y="250" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-13" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=7;" edge="1" parent="1" source="X0Fx-xbfwJYcSoWSLXi_-1" target="X0Fx-xbfwJYcSoWSLXi_-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="320" as="sourcePoint" />
+            <mxPoint x="700" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-14" value="P2P 연결 성공시 데이터를 서로 주고받는다." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="10" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-20" value="&lt;font color=&quot;#0033ff&quot; style=&quot;font-size: 15px;&quot;&gt;Peer 간 연결 성공&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="319" y="100" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-23" value="&lt;font color=&quot;#24ff48&quot; style=&quot;font-size: 15px;&quot;&gt;Peer 간 연결 실패시 TURN서버사용&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="305" y="500" width="245" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-29" value="TURN Server" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=4;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="360" y="585" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-32" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=0;jumpSize=32;strokeWidth=3;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="X0Fx-xbfwJYcSoWSLXi_-1" target="X0Fx-xbfwJYcSoWSLXi_-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="420" as="sourcePoint" />
+            <mxPoint x="690" y="590" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="480" />
+              <mxPoint x="420" y="590" />
+              <mxPoint x="680" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-33" value="STUN Server를 이용해 서로간에 직접 P2P 연결이 안될경우 TURN Server를 사용하여 데이터를 주고받는다." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="572.5" width="245" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-34" value="STUN Server" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=6;" vertex="1" parent="1">
+          <mxGeometry x="360" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="X0Fx-xbfwJYcSoWSLXi_-36" value="&lt;font color=&quot;#0033ff&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Peer간 IP 주소 확인&lt;/span&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="325" y="160" width="190" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
